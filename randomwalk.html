@@ -19,13 +19,30 @@
     <content>
       <nav class="mainnav">
         <ul>
-          <h2><a href="opengl.html">OpenGL ES 3</a></h2>
-          <li onclick="getPage('opengl-1.html');">Lesson 1</li>
-          <li onclick="getPage('opengl-2.html');">Lesson 2</li>
+          <h2><a href="opengl.html">Random Walk</a></h2>
+          <li onclick="window.location.href='index.html'">Main Page</li>
+          <li onclick="window.location.href='opengl.html'">
+            Computer Graphics
+          </li>
         </ul>
       </nav>
       <main id="content">
-        <h1 style="text-align: center">Please wait - Loading content</h1>
+        <caution>
+            NOTICE: This page is under active construction and will evolve over time to
+            become more complete. When it is sufficiently complete this notice will be
+            removed.
+          </caution>
+          
+        <h2>Random Walk</h2>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/-h6uN4kNcRk"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </main>
     </content>
     <footer>
@@ -33,7 +50,7 @@
     </footer>
     <script>
       var pages = [];
-      getPage("opengl-0.html");
+      //getPage("opengl-0.html");
       function getPage(s) {
         pages.push(s);
         var x = new XMLHttpRequest();

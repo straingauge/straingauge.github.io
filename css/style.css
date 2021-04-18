@@ -47,7 +47,6 @@ nav ul{
 }
 
 nav li{
-    display:inline-block;
     padding-right:0.2em;
     padding-top:0.5em;
     padding-bottom:0.2em;
@@ -58,8 +57,30 @@ nav a{
     text-decoration: none;
     color:silver;
 }
+
 nav li:hover{
     background-color:#ad4772d3;
+    cursor: pointer;
+}
+
+content{
+    display: flex;
+}
+
+.topnav li{
+    display:inline-block;
+}
+
+.mainnav {
+    width:200px;
+    font-size:1.1em;
+    text-align:center;
+    font-weight: bolder;
+    background-color:#49132ad3;
+}
+
+.mainnav li{
+    border: 0.1em solid purple;
 }
 
 .welcome {
@@ -68,12 +89,13 @@ nav li:hover{
 }
 
 main {
+    flex:1;
     background-color:rgba(78, 76, 76, 0.329);
     font-family: Arial, Helvetica, sans-serif;
     padding: 1em 0.2em 1em 0.2em;
     color:rgb(202, 202, 202);
 }
-main p,h1,h2 {
+main p,h2 {
     margin:0;
     padding:0.5em;
 }

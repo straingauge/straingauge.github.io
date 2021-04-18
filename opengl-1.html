@@ -1,0 +1,56 @@
+<warning
+  >WARNING: The instructions that follow are for the Raspberry Pi 4. They may
+  also potentially harm your Pi OS installation. Proceed only at your own risk.
+</warning>
+
+<caution>
+  NOTICE: This page is under active construction and will evolve over time to
+  become more complete. When it is sufficiently complete this notice will be
+  removed.
+</caution>
+<br />
+<h2>Lesson 1</h2>
+<p>
+  We start by installing the required dependencies for OpenGL ES programming.
+  Since we will be using SDL2 for dealing with the underlying GUI, we will also
+  install all the SDL2 related stuff. On the Pi OS, we will install these
+  dependencies by opening a terminal window and issuing the following commands:
+</p>
+<code>
+  sudo apt update <br />
+  sudo apt install libglfw3-dev libsdl2-dev libglm-dev mesa-utils libglew-dev
+  libsdl2-image-dev<br />
+</code>
+
+<p>
+  Once you have the dependencies installed, you want to create somewhere on your
+  drive a folder for the tutorial. You could do this:
+</p>
+<code>
+  mkdir -p OpenGL-Tutorial/Lesson-1<br />
+  cd OpenGL-Tutorial/Lesson-1<br />
+</code>
+
+<p>
+  You can view the complete code on my GitHub repo <a href="#">here</a>. Copy
+  over the relevant files from the Lesson-1 folder, or simply git clone the
+  entire repo, whatever works best for you.
+</p>
+<p>
+  Once you have the files copied over to the Lesson-1 folder, simply run the
+  <b>make</b> command to compile, link and create the executable file
+  <b>lesson-1</b> :
+</p>
+<code>
+  make<br />
+  ./lesson-1<br />
+</code>
+
+<p>Running the program, you should see a bare bones window on the screen:</p>
+<img src="images/lesson-1.png" style="width: 40%; height: auto" />
+
+<p>
+  At some point I am going to explain how the code works. The code itself is
+  self explanatory if you know C++. You can move on to Lesson-2 by clicking
+  <a href="#" onclick="getPage('opengl-2.html');">here</a>
+</p>
